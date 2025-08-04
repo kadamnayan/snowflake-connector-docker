@@ -1,0 +1,49 @@
+# Snowflake Connection Configuration
+# 
+# IMPORTANT: This is a template file with dummy values.
+# Replace with your actual Snowflake account credentials.
+# 
+# To get your account identifier:
+# 1. Log into your Snowflake web interface
+# 2. Look at the URL: https://<account_identifier>.snowflakecomputing.com
+# 3. The account identifier is the part before .snowflakecomputing.com
+#
+# Example: If your URL is https://abc123.us-east-1.snowflakecomputing.com
+# Then your account identifier is: abc123.us-east-1
+
+[connections.my_example_connection]
+# Your Snowflake account identifier (replace with actual value)
+account = "abc123.us-east-1"
+
+# Your Snowflake username (replace with actual value)
+user = "your_username"
+
+# Your Snowflake password (replace with actual value)
+password = "your_secure_password"
+
+# Your Snowflake role (common roles: ACCOUNTADMIN, SYSADMIN, USERADMIN, SECURITYADMIN)
+role = "ACCOUNTADMIN"
+
+# Your Snowflake warehouse (default is usually COMPUTE_WH)
+warehouse = "COMPUTE_WH"
+
+# Your Snowflake database (you may need to create one if it doesn't exist)
+database = "TESTDB"
+
+# Your Snowflake schema (PUBLIC is the default schema)
+schema = "PUBLIC"
+
+# Optional: Additional connection parameters
+# timeout = 120
+# login_timeout = 60
+# network_timeout = 60
+
+# Example of a complete working configuration (replace with your values):
+# [connections.my_example_connection]
+# account = "xy12345.us-central1.gcp"
+# user = "testuser"
+# password = "MySecurePassword123!"
+# role = "ACCOUNTADMIN"
+# warehouse = "COMPUTE_WH"
+# database = "TESTDB"
+# schema = "PUBLIC"
